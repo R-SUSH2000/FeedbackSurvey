@@ -1,4 +1,4 @@
-package maps;
+package MapInterfaces;
 import java.util.*;
 public class h1 {
 

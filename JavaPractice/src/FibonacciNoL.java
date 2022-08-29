@@ -1,24 +1,27 @@
 import java.util.Scanner;
 
 public class FibonacciNoL {
+	
+	static void fib(int n) {
+		int n1=0 ,n2=1,c=0;
+		while (c<n) {
+			System.out.println(n1+" ");
+			int n3=n1+n2;
+			n1=n2;
+			n2=n3;
+			c++;
+		}
+	}
 
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("till -");
 		int n=sc.nextInt();
-		int f[]=new int[n+2];
-		f[0]=0;
-		f[1]=1;
-		for(int i=2;i<=n;i++)
-		{
-			f[i]=f[i-1]+f[i-2];
-		}
-		for(ele:f)
-		{ 
-			System.out.println(" "+ele);
-		}
+		//0 1 1 2 3 
+		fib(n);
 		sc.close();
 		
 	}
+
 
 }
